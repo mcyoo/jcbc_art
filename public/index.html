@@ -5,11 +5,8 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <meta name="description" content="제주클린보이즈클럽 전시" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -24,20 +21,24 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <meta property="og:url" content="http://www.jejucleanboysclub.com" />
+    <title>제주클린보이즈클럽</title>
   </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+  <body class="bg-gray-100">
+    <header
+      class="container inset-0 max-w-full flex items-center justify-around lg:h-24 h-16 bg-white border-b border-gray-400 fixed z-10 text-gray-800 font-mono"
+    >
+      <a
+        href="https://www.instagram.com/jejucleanboysclub/?hl=ko"
+        class="bg-gradient-to-r from-yellow-400 via-pink-400 to-red-600 p-1 lg:p-1 sm:p-0 rounded-full"
+      >
+        <img
+          class="w-10 lg:w-16 rounded-full border-white border-1"
+          src="%PUBLIC_URL%/logo.jpg"
+        />
+      </a>
+      <a class="text-sm lg:text-xl">@jejucleanboysclub</a>
+    </header>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>

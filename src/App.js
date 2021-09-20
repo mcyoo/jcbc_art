@@ -1,20 +1,23 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import Home from './components/home';
-import Community from './components/community';
-import Mypage from './components/mypage';
-
+import Home from "./components/home";
+import Collection1 from "./components/collection1";
+import Collection2 from "./components/collection2";
+import Collection3 from "./components/collection3";
+import Collection4 from "./components/collection4";
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <div className='Contents-wrapper'>
+        <div className="Contents-wrapper">
           <Switch>
-            <Route exact path='/' component={Home} />
-            <Route path='/collection1' component={Community} />
-            <Route path='/collection2' component={Mypage} />
+            <Route exact path="/home" component={Home} />
+            <Route path="/collection1" component={Collection1} />
+            <Route path="/collection2" component={Collection2} />
+            <Route path="/collection3" component={Collection3} />
+            <Route path="/collection4" component={Collection4} />
           </Switch>
         </div>
       </Router>
@@ -23,24 +26,3 @@ function App() {
 }
 
 export default App;
-
-/*
-<div className="App">
-      <Router>
-        <div className='Menu-wrapper'>
-          <ul>
-            <Link to='/'><li>Home</li></Link>
-            <Link to='/community'><li>Community</li></Link>
-            <Link to='/mypage'><li>MyPage</li></Link>
-          </ul>
-        </div>
-        <div className='Contents-wrapper'>
-          <Switch>
-            <Route exact path='/' component={Home} />
-            <Route path='/community' component={Community} />
-            <Route path='/mypage' component={Mypage} />
-          </Switch>
-        </div>
-      </Router>
-    </div>
-*/

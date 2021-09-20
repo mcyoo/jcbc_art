@@ -3,16 +3,17 @@
 import React from 'react';
 import Slider from "react-slick";
 
-class Community extends React.Component {
+class Collection2 extends React.Component {
   render() {
     const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        adaptiveHeight: true,
-        initialSlide: 1,
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      adaptiveHeight: true,
+      initialSlide: 2,
+      arrows: false,
       };
     return(
         <div>
@@ -42,6 +43,6 @@ class Community extends React.Component {
   }
 }
 
-export default Community
+export default Collection2
 
 // 이와 같은 방식으로 Community, Mypage 컴포넌트도 생성
