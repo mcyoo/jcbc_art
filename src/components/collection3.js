@@ -30,9 +30,6 @@ class Collection3 extends React.Component {
       slidesToScroll: 1,
       swipeToSlide: true,
       initialSlide: 2,
-      beforeChange: () => {
-        window.scrollTo({ top: 0, left: 0 });
-      },
       appendDots: (dots) => (
         <div
           style={{
