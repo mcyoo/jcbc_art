@@ -7,7 +7,6 @@ import collection2 from "../assets/img/collection2.JPG";
 import collection4 from "../assets/img/collection4.png";
 import throwball from "../assets/video/throw.MOV";
 import miniplay from "../assets/video/miniplay.MOV";
-import together from "../assets/video/together.MOV";
 
 class Collection1 extends React.Component {
   state = {
@@ -82,10 +81,10 @@ class Collection1 extends React.Component {
           );
         }
         if (i === 3) {
-          return <div style={{ flex: 1 }}></div>;
+          return <div style={{}}></div>;
         }
         if (i === 4) {
-          return <div style={{ flex: 1 }}></div>;
+          return <div style={{}}></div>;
         }
       },
     };
@@ -100,7 +99,7 @@ class Collection1 extends React.Component {
                   <div className="flex items-center justify-center">
                     <div className="bg-white p-4 rounded-md">
                       <div className="w-2/3 h-6 bg-gray-200 rounded-full animate-pulse mb-4"></div>
-                      <div className="w-72 md:w-96 h-48 bg-gray-200 animate-pulse"></div>
+                      <div className="w-80 h-72 md:w-96 md:h-96 bg-gray-200 animate-pulse"></div>
                       <div className="mt-8 h-32 w-full space-y-3">
                         <div className="w-20 h-6 bg-gray-200 rounded-full animate-pulse"></div>
                         <div className="w-full h-4 bg-gray-200 rounded-full animate-pulse"></div>
@@ -146,7 +145,7 @@ class Collection1 extends React.Component {
                           <div>
                             <img
                               src={collection1}
-                              className="w-full h-60 md:h-80"
+                              className="w-full h-72 md:h-96"
                               alt="collection1"
                             />
                           </div>
@@ -168,7 +167,7 @@ class Collection1 extends React.Component {
                           </div>
                           <div className="mx-4 mb-4">
                             <span className="text-sm">
-                              해안가에 흰색 트레이가 버려져 있다. 가져와 그
+                              해안가에 흰색 트레이가 버려져 있다. 주워다가 그
                               트레이에 예쁜 꽃을 심었다. 보기 좋았다.
                             </span>
                           </div>
@@ -209,7 +208,7 @@ class Collection1 extends React.Component {
                           <div>
                             <img
                               src={collection2}
-                              className="w-full h-60 md:h-80"
+                              className="w-full h-72 md:h-96"
                               alt="collection2"
                             />
                           </div>
@@ -232,7 +231,8 @@ class Collection1 extends React.Component {
                           <div className="mx-4 mb-4">
                             <span className="text-sm">
                               쓰레기를 줍다보면 다양한 색깔의 부표들이 버려져
-                              있다. 색깔 별로 모아 걸어두었다. 썩 괜찮아 보였다.
+                              있다. 색깔 별로 모아서 크리스마스 트리 처럼
+                              형형색색의 부표를 걸어두었다. 썩 괜찮아 보였다.
                             </span>
                           </div>
                         </div>
@@ -272,7 +272,7 @@ class Collection1 extends React.Component {
                           <div>
                             <img
                               src={collection4}
-                              className="w-full h-60 md:h-80"
+                              className="w-full h-72 md:h-96"
                               alt="collection4"
                             />
                           </div>
