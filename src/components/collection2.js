@@ -6,6 +6,7 @@ import collection1 from "../assets/img/collection1.png";
 import collection2 from "../assets/img/collection2.JPG";
 import collection4 from "../assets/img/collection4.png";
 import good from "../assets/img/good.JPG";
+import poster from "../assets/img/poster.png";
 import throwball from "../assets/video/throw.MOV";
 import miniplay from "../assets/video/miniplay.MOV";
 
@@ -32,7 +33,7 @@ class Collection2 extends React.Component {
       slidesToShow: 1,
       slidesToScroll: 1,
       swipeToSlide: true,
-      initialSlide: 1,
+      initialSlide: 2,
       appendDots: (dots) => (
         <div
           style={{
@@ -51,6 +52,13 @@ class Collection2 extends React.Component {
         if (i === 0) {
           return (
             <div style={{ flex: 1 }}>
+              <img className="w-12 lg:w-16" alt="poster" src={poster} />
+            </div>
+          );
+        }
+        if (i === 1) {
+          return (
+            <div style={{ flex: 1 }}>
               <img
                 className="w-12 lg:w-16"
                 alt="collection1"
@@ -59,7 +67,7 @@ class Collection2 extends React.Component {
             </div>
           );
         }
-        if (i === 1) {
+        if (i === 2) {
           return (
             <div style={{ flex: 1 }}>
               <img
@@ -70,7 +78,7 @@ class Collection2 extends React.Component {
             </div>
           );
         }
-        if (i === 2) {
+        if (i === 3) {
           return (
             <div style={{ flex: 1 }}>
               <img
@@ -81,13 +89,13 @@ class Collection2 extends React.Component {
             </div>
           );
         }
-        if (i === 3) {
-          return <div style={{}}></div>;
-        }
         if (i === 4) {
           return <div style={{}}></div>;
         }
         if (i === 5) {
+          return <div style={{}}></div>;
+        }
+        if (i === 6) {
           return <div style={{}}></div>;
         }
       },
@@ -119,6 +127,42 @@ class Collection2 extends React.Component {
         ) : (
           <div className="">
             <Slider {...settings}>
+              <div className="w-screen overflow-x-hidden">
+                <div className="pt-0">
+                  <div className="px-2">
+                    <div className="max-w-md mx-auto bg-white shadow-lg rounded-md overflow-hidden md:max-w-2xl">
+                      <div className="flex">
+                        <div className="w-full">
+                          <div className="flex justify-between items-center p-3">
+                            <div className="flex flex-row items-center">
+                              <img
+                                src={jcbc_logo}
+                                className="rounded-full"
+                                width="40"
+                                alt="jcbc_logo"
+                              />
+                              <div className="flex flex-row items-center ml-2">
+                                {" "}
+                                <span className="font-bold mr-1 text-sm md:text-lg">
+                                  제주클린보이즈 클럽 전시회
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <img
+                              src={poster}
+                              className="w-full h-80 md:h-96"
+                              alt="poster"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               <div className="w-screen overflow-x-hidden">
                 <div className="pt-0">
                   <div className="px-2">
