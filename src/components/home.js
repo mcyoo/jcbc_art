@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "../assets/App.css";
 import jcbc_logo from "../assets/img/logo.jpg";
-import collection1 from "../assets/img/collection1.png";
+import collection1 from "../assets/img/collection1.jpeg";
 import collection2 from "../assets/img/collection2.JPG";
 import collection4 from "../assets/img/collection4.png";
 import good from "../assets/img/good.JPG";
@@ -59,6 +59,13 @@ class Home extends React.Component {
         if (i === 1) {
           return (
             <div style={{ flex: 1 }}>
+              <img className="w-12 lg:w-16" alt="jcbc_logo" src={jcbc_logo} />
+            </div>
+          );
+        }
+        if (i === 2) {
+          return (
+            <div style={{ flex: 1 }}>
               <img
                 className="w-12 lg:w-16"
                 alt="collection1"
@@ -67,7 +74,7 @@ class Home extends React.Component {
             </div>
           );
         }
-        if (i === 2) {
+        if (i === 3) {
           return (
             <div style={{ flex: 1 }}>
               <img
@@ -78,7 +85,10 @@ class Home extends React.Component {
             </div>
           );
         }
-        if (i === 3) {
+        if (i === 4) {
+          return <div style={{}}></div>;
+        }
+        if (i === 5) {
           return (
             <div style={{ flex: 1 }}>
               <img
@@ -89,13 +99,13 @@ class Home extends React.Component {
             </div>
           );
         }
-        if (i === 4) {
-          return <div style={{}}></div>;
-        }
-        if (i === 5) {
-          return <div style={{}}></div>;
-        }
         if (i === 6) {
+          return <div style={{}}></div>;
+        }
+        if (i === 7) {
+          return <div style={{}}></div>;
+        }
+        if (i === 8) {
           return <div style={{}}></div>;
         }
       },
@@ -152,9 +162,48 @@ class Home extends React.Component {
                           <div>
                             <img
                               src={poster}
-                              className="w-full h-80 md:h-96"
+                              className=""
                               alt="poster"
                             />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="w-screen overflow-x-hidden">
+                <div className="pt-0">
+                  <div className="px-2">
+                    <div className="max-w-md mx-auto bg-white shadow-lg rounded-md overflow-hidden md:max-w-2xl">
+                      <div className="flex">
+                        <div className="w-full">
+                          <div className="flex justify-between items-center p-3">
+                            <div className="flex flex-row items-center">
+                              <img
+                                src={jcbc_logo}
+                                className="rounded-full"
+                                width="40"
+                                alt="jcbc_logo"
+                              />
+                              <div className="flex flex-row items-center ml-2">
+                                {" "}
+                                <span className="font-bold mr-1 text-sm md:text-lg">
+                                  제주클린보이즈클럽
+                                </span>
+                              </div>
+                            </div>
+                            <div className="pr-2">
+                              {" "}
+                              <i className="fa fa-ellipsis-h text-gray-400 hover:cursor-pointer hover:text-gray-600"></i>
+                            </div>
+                          </div>
+                          <div className="mx-4 mb-4">
+                            <span className="text-sm md:text-lg md:leading-8">
+                              저희 제주클린보이즈클럽은 2020년 10월부터 지금까지 매일 아침 8시에 집 근처 해안가에 쓰레기를 줍는 팀입니다.
+                              30-40분 내외로 쓰레기를 주우며, 건강한 아침운동 처럼 매일 진행하고 있습니다. 저희에 활동 사진을 인스타그램에 올리고 있으며, 참여 연락 주신분들과도 같이 쓰레기를 줍고 있습니다. 활동사진을 공유함으로써, 사람들에게 쓰레기에 심각성을 알리고, 동시에 건강하고 재밌는 운동으로, 또 색다른 문제 해결방식을 제안하고 있습니다.
+                            </span>
                           </div>
                         </div>
                       </div>
@@ -192,7 +241,7 @@ class Home extends React.Component {
                           <div>
                             <img
                               src={collection1}
-                              className="w-full h-80 md:h-96"
+                              className=""
                               alt="collection1"
                             />
                           </div>
@@ -209,8 +258,7 @@ class Home extends React.Component {
 
                           <div className="mx-4 mb-4">
                             <span className="text-sm">
-                              해안가에 흰색 트레이가 버려져 있다. 주워다가 그
-                              트레이에 예쁜 꽃을 심었다. 보기 좋았다.
+                              어선에서 쓸 법한 흰색 트레이가 버려져 있다. 뭐가 담겼을지 모를, 쓰임을 다한 트레이에 흙을 채우고, 식물을 심었다. 
                             </span>
                           </div>
                         </div>
@@ -249,7 +297,7 @@ class Home extends React.Component {
                           <div>
                             <img
                               src={collection2}
-                              className="w-full h-80 md:h-96"
+                              className=""
                               alt="collection2"
                             />
                           </div>
@@ -265,10 +313,39 @@ class Home extends React.Component {
                           </div>
                           <div className="mx-4 mb-4">
                             <span className="text-sm">
-                              쓰레기를 줍다보면 다양한 색깔의 부표들이 버려져
+                              다양한 색깔의 부표들이 버려져
                               있다. 색깔 별로 모아서 크리스마스 트리 처럼
-                              형형색색의 부표를 걸어두었다. 썩 괜찮아 보였다.
+                              형형색색의 부표를 걸어두었다.
                             </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="w-screen overflow-x-hidden">
+                <div className="pt-0">
+                  <div className="px-2">
+                    <div className="max-w-md mx-auto bg-white shadow-lg rounded-md overflow-hidden md:max-w-2xl">
+                      <div className="flex">
+                        <div className="w-full">
+                          <div className="flex justify-between items-center p-3">
+                            <div className="flex flex-row items-center">
+                              <img
+                                src={jcbc_logo}
+                                className="rounded-full"
+                                width="40"
+                                alt="jcbc_logo"
+                              />
+                              <div className="flex flex-row items-center ml-2">
+                                {" "}
+                                <span className="font-bold mr-1 text-sm md:text-lg">
+                                  준비중...
+                                </span>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -306,7 +383,7 @@ class Home extends React.Component {
                           <div>
                             <img
                               src={collection4}
-                              className="w-full h-80 md:h-96"
+                              className=""
                               alt="collection4"
                             />
                           </div>
@@ -322,8 +399,7 @@ class Home extends React.Component {
                           </div>
                           <div className="mx-4 mb-4">
                             <span className="text-sm">
-                              다른 나라 언어로 적혀있는 라이터들을 모아서 갈라진
-                              돌 틈 사이로 두었더니 예쁘다..!
+                              다른 나라에서 온 라이터들을 주워다가 여기 제주도 화산섬에 모였다고, 그렇게 만났다고 표현했다.
                             </span>
                           </div>
                         </div>
@@ -382,8 +458,7 @@ class Home extends React.Component {
                           </div>
                           <div className="mx-4 mb-4">
                             <span className="text-sm">
-                              저희는 가끔씩 이렇게 놉니다. 부표를 던지구요.
-                              최대한 멀리요.
+                              부표를 최대한 멀리 던집니다..!
                             </span>
                           </div>
                         </div>
@@ -480,7 +555,7 @@ class Home extends React.Component {
                           <div>
                             <img
                               src={good}
-                              className="w-full h-80 md:h-96"
+                              className=""
                               alt="good"
                             />
                           </div>
@@ -506,7 +581,7 @@ class Home extends React.Component {
                 </div>
               </div>
             </Slider>
-            <div className="flex-col md:text-lg text-sm text-right mr-5 mb-24 border-t border-gray-400 md:mx-48 mx-4 mt-8">
+            <div className="flex-col md:text-lg text-sm text-right mr-5 mb-32 border-t border-gray-400 md:mx-48 mx-4 mt-8">
               <div className="mt-4">제주클린보이즈클럽 작품 전시회</div>
               <div>2021.10 ~ 2021.11</div>
               <div>애월읍 신엄리 2841-14 올레16코스</div>
