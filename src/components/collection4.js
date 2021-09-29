@@ -52,14 +52,14 @@ class Collection4 extends React.Component {
         if (i === 0) {
           return (
             <div style={{ flex: 1 }}>
-              <img className="w-12 lg:w-16" alt="poster" src={poster} />
+              <img className="w-10 lg:w-16" alt="poster" src={poster} />
             </div>
           );
         }
         if (i === 1) {
           return (
             <div style={{ flex: 1 }}>
-              <img className="w-12 lg:w-16" alt="jcbc_logo" src={jcbc_logo} />
+              <img className="w-10 lg:w-16" alt="jcbc_logo" src={jcbc_logo} />
             </div>
           );
         }
@@ -67,7 +67,7 @@ class Collection4 extends React.Component {
           return (
             <div style={{ flex: 1 }}>
               <img
-                className="w-12 lg:w-16"
+                className="w-10 lg:w-16"
                 alt="collection1"
                 src={collection1}
               />
@@ -78,7 +78,7 @@ class Collection4 extends React.Component {
           return (
             <div style={{ flex: 1 }}>
               <img
-                className="w-12 lg:w-16"
+                className="w-10 lg:w-16"
                 alt="collection2"
                 src={collection2}
               />
@@ -92,7 +92,7 @@ class Collection4 extends React.Component {
           return (
             <div style={{ flex: 1 }}>
               <img
-                className="w-12 lg:w-16"
+                className="w-10 lg:w-16"
                 alt="collection4"
                 src={collection4}
               />
@@ -582,7 +582,7 @@ class Collection4 extends React.Component {
               </div>
 
             </Slider>
-            <div className="flex-col md:text-lg text-sm text-right mr-5 mb-32 border-t border-gray-400 md:mx-48 mx-4 mt-8">
+            <div className="flex-col md:text-lg text-sm text-right mr-5 mb-36 border-t border-gray-400 md:mx-48 mx-4 mt-8">
               <div className="mt-4">제주클린보이즈클럽 작품 전시회</div>
               <div>2021.10 ~ 2021.11</div>
               <div>애월읍 신엄리 2841-14 올레16코스</div>
