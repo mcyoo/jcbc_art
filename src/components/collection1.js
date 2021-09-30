@@ -18,7 +18,7 @@ class Collection1 extends React.Component {
   componentDidMount() {
     setTimeout(() => {
       this.setState({ isLoading: false });
-    }, 1500);
+    }, 2000);
   }
 
   render() {
