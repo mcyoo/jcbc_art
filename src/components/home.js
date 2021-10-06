@@ -57,11 +57,7 @@ class Home extends React.Component {
         if (i === 0) {
           return (
             <div style={{ flex: 1 }}>
-              <img
-                className="ml-14 w-10 h-16 lg:w-16"
-                alt="poster"
-                src={poster}
-              />
+              <img className="w-10 lg:w-16" alt="poster" src={poster} />
             </div>
           );
         }
@@ -69,7 +65,7 @@ class Home extends React.Component {
           return (
             <div style={{ flex: 1 }}>
               <img
-                className="w-10 h-16 lg:w-16"
+                className="w-10 lg:w-16"
                 alt="collection1"
                 src={collection1}
               />
@@ -80,7 +76,7 @@ class Home extends React.Component {
           return (
             <div style={{ flex: 1 }}>
               <img
-                className="w-10 h-16 lg:w-16"
+                className="w-10 lg:w-16"
                 alt="collection2"
                 src={collection2}
               />
@@ -91,7 +87,7 @@ class Home extends React.Component {
           return (
             <div style={{ flex: 1 }}>
               <img
-                className="w-10 h-16 lg:w-16"
+                className="w-10 lg:w-16"
                 alt="collection3"
                 src={collection3}
               />
@@ -380,7 +376,13 @@ class Home extends React.Component {
                             </div>
                           </div>
                           <div>
-                            <video muted="muted" controls loop preload="auto">
+                            <video
+                              muted="muted"
+                              controls
+                              loop
+                              preload="auto"
+                              autoplay="autoplay"
+                            >
                               <source src={throwball}></source>
                             </video>
                           </div>
@@ -434,11 +436,11 @@ class Home extends React.Component {
                           </div>
                           <div>
                             <video
+                              autoplay="autoplay"
                               muted="muted"
                               controls
                               loop
                               preload="auto"
-                              className="w-full h-full"
                             >
                               <source src={miniplay}></source>
                             </video>
