@@ -3,12 +3,14 @@ import Slider from "react-slick";
 import "../assets/App.css";
 import jcbc_logo from "../assets/img/logo.jpg";
 import collection1 from "../assets/img/collection1.jpeg";
-import collection2 from "../assets/img/collection2.JPG";
-import collection4 from "../assets/img/collection4.png";
+import collection2 from "../assets/img/collection2.jpeg";
+import collection3 from "../assets/img/collection3.jpg";
 import good from "../assets/img/good.JPG";
 import poster from "../assets/img/poster.png";
+import jeseogy from "../assets/img/jeseogy.JPG";
 import throwball from "../assets/video/throw.MOV";
 import miniplay from "../assets/video/miniplay.MOV";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 class Collection3 extends React.Component {
   state = {
@@ -18,7 +20,7 @@ class Collection3 extends React.Component {
   componentDidMount() {
     setTimeout(() => {
       this.setState({ isLoading: false });
-    }, 2000);
+    }, 1500);
   }
 
   render() {
@@ -29,11 +31,14 @@ class Collection3 extends React.Component {
       dots: true,
       arrows: false,
       infinite: true,
-      speed: 400,
+      speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
       swipeToSlide: true,
-      initialSlide: 4,
+      initialSlide: 3,
+      className: "center",
+      centerMode: false,
+      centerPadding: "20px",
       appendDots: (dots) => (
         <div
           style={{
@@ -52,14 +57,18 @@ class Collection3 extends React.Component {
         if (i === 0) {
           return (
             <div style={{ flex: 1 }}>
-              <img className="w-10 lg:w-16" alt="poster" src={poster} />
+              <img className="w-10 h-16 lg:w-16" alt="poster" src={poster} />
             </div>
           );
         }
         if (i === 1) {
           return (
             <div style={{ flex: 1 }}>
-              <img className="w-10 lg:w-16" alt="jcbc_logo" src={jcbc_logo} />
+              <img
+                className="w-10 h-16 lg:w-16"
+                alt="collection1"
+                src={collection1}
+              />
             </div>
           );
         }
@@ -67,9 +76,9 @@ class Collection3 extends React.Component {
           return (
             <div style={{ flex: 1 }}>
               <img
-                className="w-10 lg:w-16"
-                alt="collection1"
-                src={collection1}
+                className="w-10 h-16 lg:w-16"
+                alt="collection2"
+                src={collection2}
               />
             </div>
           );
@@ -78,9 +87,9 @@ class Collection3 extends React.Component {
           return (
             <div style={{ flex: 1 }}>
               <img
-                className="w-10 lg:w-16"
-                alt="collection2"
-                src={collection2}
+                className="w-10 h-16 lg:w-16"
+                alt="collection3"
+                src={collection3}
               />
             </div>
           );
@@ -89,15 +98,7 @@ class Collection3 extends React.Component {
           return <div style={{}}></div>;
         }
         if (i === 5) {
-          return (
-            <div style={{ flex: 1 }}>
-              <img
-                className="w-10 lg:w-16"
-                alt="collection4"
-                src={collection4}
-              />
-            </div>
-          );
+          return <div style={{}}></div>;
         }
         if (i === 6) {
           return <div style={{}}></div>;
@@ -145,64 +146,22 @@ class Collection3 extends React.Component {
                         <div className="w-full">
                           <div className="flex justify-between items-center p-3">
                             <div className="flex flex-row items-center">
-                              <img
-                                src={jcbc_logo}
-                                className="rounded-full"
-                                width="40"
-                                alt="jcbc_logo"
-                              />
-                              <div className="flex flex-row items-center ml-2">
-                                {" "}
-                                <span className="font-bold mr-1 text-sm md:text-lg">
-                                  제주클린보이즈 클럽 전시회
-                                </span>
-                              </div>
+                              <span className="font-bold mr-1 text-sm md:text-lg">
+                                제주클린보이즈클럽 전시회
+                              </span>
                             </div>
                           </div>
                           <div>
-                            <img
-                              src={poster}
-                              className=""
-                              alt="poster"
-                            />
+                            <LazyLoadImage alt="poster" src={poster} />
                           </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="w-screen overflow-x-hidden">
-                <div className="pt-0">
-                  <div className="px-2">
-                    <div className="max-w-md mx-auto bg-white shadow-lg rounded-md overflow-hidden md:max-w-2xl">
-                      <div className="flex">
-                        <div className="w-full">
-                          <div className="flex justify-between items-center p-3">
-                            <div className="flex flex-row items-center">
-                              <img
-                                src={jcbc_logo}
-                                className="rounded-full"
-                                width="40"
-                                alt="jcbc_logo"
-                              />
-                              <div className="flex flex-row items-center ml-2">
-                                {" "}
-                                <span className="font-bold mr-1 text-sm md:text-lg">
-                                  제주클린보이즈클럽
-                                </span>
-                              </div>
-                            </div>
-                            <div className="pr-2">
-                              {" "}
-                              <i className="fa fa-ellipsis-h text-gray-400 hover:cursor-pointer hover:text-gray-600"></i>
-                            </div>
-                          </div>
-                          <div className="mx-4 mb-4">
+                          <div className="mx-4 mb-4 mt-6">
                             <span className="text-sm md:text-lg md:leading-8">
-                              저희 제주클린보이즈클럽은 2020년 10월부터 지금까지 매일 아침 8시에 집 근처 해안가에 쓰레기를 줍는 팀입니다.
-                              30-40분 내외로 쓰레기를 주우며, 건강한 아침운동 처럼 매일 진행하고 있습니다. 저희에 활동 사진을 인스타그램에 올리고 있으며, 참여 연락 주신분들과도 같이 쓰레기를 줍고 있습니다. 활동사진을 공유함으로써, 사람들에게 쓰레기에 심각성을 알리고, 동시에 건강하고 재밌는 운동으로, 또 색다른 문제 해결방식을 제안하고 있습니다.
+                              제주클린보이즈클럽은 2020년 10월 부터 활동을 시작
+                              했으며, 매일 아침 8시에 집 근처 해안가 쓰레기를
+                              줍고 있습니다. 30-40분 내외 로 쓰레기를 주우며,
+                              아침 운동 처럼 매일 진행하고 있습니다. 저희 활동
+                              사진을 인스타그램에 올리고 있으며, 참여 연락
+                              주신분들 과도 함께 쓰레기를 줍고 있습니다.
                             </span>
                           </div>
                         </div>
@@ -211,7 +170,6 @@ class Collection3 extends React.Component {
                   </div>
                 </div>
               </div>
-
               <div className="w-screen overflow-x-hidden">
                 <div className="pt-0">
                   <div className="px-2">
@@ -220,18 +178,9 @@ class Collection3 extends React.Component {
                         <div className="w-full">
                           <div className="flex justify-between items-center p-3">
                             <div className="flex flex-row items-center">
-                              <img
-                                src={jcbc_logo}
-                                className="rounded-full"
-                                width="40"
-                                alt="jcbc_logo"
-                              />
-                              <div className="flex flex-row items-center ml-2">
-                                {" "}
-                                <span className="font-bold mr-1 text-sm md:text-lg">
-                                  플라스틱 바스켓 화분, 2021.09
-                                </span>
-                              </div>
+                              <span className="font-bold mr-1 text-sm md:text-lg">
+                                작품명 : 플라스틱 바스켓 화분, 2021.09
+                              </span>
                             </div>
                             <div className="pr-2">
                               {" "}
@@ -239,10 +188,9 @@ class Collection3 extends React.Component {
                             </div>
                           </div>
                           <div>
-                            <img
-                              src={collection1}
-                              className=""
+                            <LazyLoadImage
                               alt="collection1"
+                              src={collection1}
                             />
                           </div>
                           <div className="p-4 flex justify-between items-center">
@@ -258,7 +206,9 @@ class Collection3 extends React.Component {
 
                           <div className="mx-4 mb-4">
                             <span className="text-sm">
-                              어선에서 쓸 법한 흰색 트레이가 버려져 있다. 뭐가 담겼을지 모를, 쓰임을 다한 트레이에 흙을 채우고, 식물을 심었다. 
+                              어선에서 쓸 법한 흰색 트레이가 버려져 있다. 뭐가
+                              담겼을지 모를, 쓰임을 다한 트레이에 흙을 채우고,
+                              식물을 심었다.
                             </span>
                           </div>
                         </div>
@@ -276,18 +226,9 @@ class Collection3 extends React.Component {
                         <div className="w-full">
                           <div className="flex justify-between items-center p-3">
                             <div className="flex flex-row items-center">
-                              <img
-                                src={jcbc_logo}
-                                className="rounded-full"
-                                width="40"
-                                alt="jcbc_logo"
-                              />
-                              <div className="flex flex-row items-center ml-2">
-                                {" "}
-                                <span className="font-bold mr-1 text-sm md:text-lg">
-                                  크리스마스 트리, 2021.09
-                                </span>
-                              </div>
+                              <span className="font-bold mr-1 text-sm md:text-lg">
+                                작품명 : 돌틈에 라이터, 2021.09
+                              </span>
                             </div>
                             <div className="pr-2">
                               {" "}
@@ -295,10 +236,9 @@ class Collection3 extends React.Component {
                             </div>
                           </div>
                           <div>
-                            <img
-                              src={collection2}
-                              className=""
+                            <LazyLoadImage
                               alt="collection2"
+                              src={collection2}
                             />
                           </div>
                           <div className="p-4 flex justify-between items-center">
@@ -313,9 +253,8 @@ class Collection3 extends React.Component {
                           </div>
                           <div className="mx-4 mb-4">
                             <span className="text-sm">
-                              다양한 색깔의 부표들이 버려져
-                              있다. 색깔 별로 모아서 크리스마스 트리 처럼
-                              형형색색의 부표를 걸어두었다.
+                              제주도는 화산섬 이다. 돌 틈으로 용암이 흘러
+                              내린다. 자세히는 보지 말자. 멀리서 봐야 아름답다.
                             </span>
                           </div>
                         </div>
@@ -333,47 +272,9 @@ class Collection3 extends React.Component {
                         <div className="w-full">
                           <div className="flex justify-between items-center p-3">
                             <div className="flex flex-row items-center">
-                              <img
-                                src={jcbc_logo}
-                                className="rounded-full"
-                                width="40"
-                                alt="jcbc_logo"
-                              />
-                              <div className="flex flex-row items-center ml-2">
-                                {" "}
-                                <span className="font-bold mr-1 text-sm md:text-lg">
-                                준비중...
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="w-screen overflow-x-hidden">
-                <div className="pt-0">
-                  <div className="px-2">
-                    <div className="max-w-md mx-auto bg-white shadow-lg rounded-md overflow-hidden md:max-w-2xl">
-                      <div className="flex">
-                        <div className="w-full">
-                          <div className="flex justify-between items-center p-3">
-                            <div className="flex flex-row items-center">
-                              <img
-                                src={jcbc_logo}
-                                className="rounded-full"
-                                width="40"
-                                alt="jcbc_logo"
-                              />
-                              <div className="flex flex-row items-center ml-2">
-                                {" "}
-                                <span className="font-bold mr-1 text-sm md:text-lg">
-                                  돌틈에 라이터, 2021.09
-                                </span>
-                              </div>
+                              <span className="font-bold mr-1 text-sm md:text-lg">
+                                작품명 : 크리스마스 트리, 2021.09
+                              </span>
                             </div>
                             <div className="pr-2">
                               {" "}
@@ -381,10 +282,9 @@ class Collection3 extends React.Component {
                             </div>
                           </div>
                           <div>
-                            <img
-                              src={collection4}
-                              className=""
-                              alt="collection4"
+                            <LazyLoadImage
+                              alt="collection3"
+                              src={collection3}
                             />
                           </div>
                           <div className="p-4 flex justify-between items-center">
@@ -399,10 +299,50 @@ class Collection3 extends React.Component {
                           </div>
                           <div className="mx-4 mb-4">
                             <span className="text-sm">
-                              다른 나라에서 온 라이터들을 주워다가 여기 제주도 화산섬에 모였다고, 그렇게 만났다고 표현했다.
+                              다양한 색깔의 부표들이 버려져 있다. 색깔 별로
+                              모아서 크리스마스 트리 처럼 형형색색의 부표를
+                              걸어두었다.
                             </span>
                           </div>
                         </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="w-screen overflow-x-hidden font-sans">
+                <div class="flex justify-center items-center p-6">
+                  <div class="bg-white border-2 border-gray-300 p-6 rounded-md tracking-wide shadow-lg">
+                    <h4
+                      id="name"
+                      class="text-lg font-semibold text-center mb-4 font-sans"
+                    >
+                      쓰레기 실명제
+                    </h4>
+                    <div id="header" class="flex items-center mb-4">
+                      <img
+                        alt="avatar"
+                        class="w-20 border-2 border-gray-300"
+                        src={jeseogy}
+                      />
+                      <div id="header-text" class="leading-5 ml-6 sm">
+                        <h4 id="name" class="text-lg font-semibold">
+                          유제석
+                        </h4>
+                        <h5 id="job" class="font-semibold text-sm">
+                          평범한 시민
+                        </h5>
+                      </div>
+                    </div>
+                    <div class="font-semibold text-sm text-gray-900">
+                      <div>성별 : 남성</div>
+                      <div>나이 : 27</div>
+                      <div>전화번호 : +82 10-4737-4115</div>
+                      <div>쓰레기 좌표 : 33.468866, 126.312406</div>
+                      <div>
+                        쓰레기를 발견할 시, 위에 번호로 연락 주시기 바랍니다.
+                        감사합니다.
                       </div>
                     </div>
                   </div>
@@ -436,13 +376,7 @@ class Collection3 extends React.Component {
                             </div>
                           </div>
                           <div>
-                            <video
-                              autoPlay="autoplay"
-                              muted="muted"
-                              controls
-                              loop
-                              preload="auto"
-                            >
+                            <video muted="muted" controls loop preload="auto">
                               <source src={throwball}></source>
                             </video>
                           </div>
@@ -496,7 +430,6 @@ class Collection3 extends React.Component {
                           </div>
                           <div>
                             <video
-                              autoPlay="autoplay"
                               muted="muted"
                               controls
                               loop
@@ -553,11 +486,7 @@ class Collection3 extends React.Component {
                             </div>
                           </div>
                           <div>
-                            <img
-                              src={good}
-                              className=""
-                              alt="good"
-                            />
+                            <img src={good} className="" alt="good" />
                           </div>
                           <div className="p-4 flex justify-between items-center">
                             <div className="flex flex-row items-center">
@@ -583,7 +512,7 @@ class Collection3 extends React.Component {
             </Slider>
             <div className="flex-col md:text-lg text-sm text-right mr-5 mb-36 border-t border-gray-400 md:mx-48 mx-4 mt-8">
               <div className="mt-4">제주클린보이즈클럽 작품 전시회</div>
-              <div>2021.10 ~ 2021.11</div>
+              <div>2021.10</div>
               <div>애월읍 신엄리 2841-14 올레16코스</div>
               <div>📧 mcyoo247@gmail.com</div>
             </div>
