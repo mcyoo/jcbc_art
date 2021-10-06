@@ -57,7 +57,11 @@ class Home extends React.Component {
         if (i === 0) {
           return (
             <div style={{ flex: 1 }}>
-              <img className="w-10 h-16 lg:w-16" alt="poster" src={poster} />
+              <img
+                className="ml-14 w-10 h-16 lg:w-16"
+                alt="poster"
+                src={poster}
+              />
             </div>
           );
         }
