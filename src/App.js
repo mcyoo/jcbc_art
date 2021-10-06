@@ -18,6 +18,10 @@ function App() {
             <Route path="/collection2" component={Collection2} />
             <Route path="/collection3" component={Collection3} />
             <Route path="/collection4" component={Collection4} />
+            <Route path="/collection5" component={Home} />
+            <Route path="/collection6" component={Home} />
+            <Route path="/collection7" component={Collection4} />
+            <Route path="/collection8" component={Collection4} />
           </Switch>
         </div>
       </Router>
