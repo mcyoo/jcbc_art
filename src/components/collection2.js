@@ -5,7 +5,7 @@ import jcbc_logo from "../assets/img/logo.jpg";
 import collection1 from "../assets/img/collection1.jpeg";
 import collection2 from "../assets/img/collection2.jpeg";
 import collection3 from "../assets/img/collection3.jpg";
-import good from "../assets/img/good.JPG";
+import good from "../assets/img/good.jpg";
 import poster from "../assets/img/poster.png";
 import jeseogy from "../assets/img/jeseogy.JPG";
 import throwball from "../assets/video/throw.MOV";
@@ -28,7 +28,7 @@ class Collection2 extends React.Component {
 
     const settings = {
       adaptiveHeight: true,
-      dots: true,
+      dots: false,
       arrows: false,
       infinite: true,
       speed: 500,
@@ -37,8 +37,9 @@ class Collection2 extends React.Component {
       swipeToSlide: true,
       initialSlide: 2,
       className: "center",
-      centerMode: false,
-      centerPadding: "20px",
+      centerMode: true,
+      centerPadding: "16px",
+      visibleByDefault: true,
       appendDots: (dots) => (
         <div
           style={{
