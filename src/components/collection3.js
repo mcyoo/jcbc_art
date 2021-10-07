@@ -39,7 +39,6 @@ class Collection3 extends React.Component {
       className: "center",
       centerMode: true,
       centerPadding: "16px",
-      visibleByDefault: true,
       appendDots: (dots) => (
         <div
           style={{
@@ -153,7 +152,11 @@ class Collection3 extends React.Component {
                             </div>
                           </div>
                           <div>
-                            <LazyLoadImage alt="poster" src={poster} />
+                            <LazyLoadImage
+                              alt="poster"
+                              src={poster}
+                              visibleByDefault={true}
+                            />
                           </div>
                           <div className="mx-4 mb-4 mt-6">
                             <span className="text-sm md:text-lg md:leading-8">
@@ -192,6 +195,7 @@ class Collection3 extends React.Component {
                             <LazyLoadImage
                               alt="collection1"
                               src={collection1}
+                              visibleByDefault={true}
                             />
                           </div>
                           <div className="p-4 flex justify-between items-center">
@@ -240,6 +244,7 @@ class Collection3 extends React.Component {
                             <LazyLoadImage
                               alt="collection2"
                               src={collection2}
+                              visibleByDefault={true}
                             />
                           </div>
                           <div className="p-4 flex justify-between items-center">
@@ -286,6 +291,7 @@ class Collection3 extends React.Component {
                             <LazyLoadImage
                               alt="collection3"
                               src={collection3}
+                              visibleByDefault={true}
                             />
                           </div>
                           <div className="p-4 flex justify-between items-center">
@@ -437,11 +443,11 @@ class Collection3 extends React.Component {
                           </div>
                           <div>
                             <video
+                              autoplay="autoplay"
                               muted="muted"
                               controls
                               loop
                               preload="auto"
-                              autoplay="autoplay"
                             >
                               <source src={miniplay}></source>
                             </video>
@@ -493,7 +499,11 @@ class Collection3 extends React.Component {
                             </div>
                           </div>
                           <div>
-                            <img src={good} className="" alt="good" />
+                            <LazyLoadImage
+                              alt="good"
+                              src={good}
+                              visibleByDefault={true}
+                            />
                           </div>
                           <div className="p-4 flex justify-between items-center">
                             <div className="flex flex-row items-center">
