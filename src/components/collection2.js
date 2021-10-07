@@ -7,7 +7,6 @@ import collection2 from "../assets/img/collection2.jpeg";
 import collection3 from "../assets/img/collection3.jpg";
 import good from "../assets/img/good.jpg";
 import poster from "../assets/img/poster.png";
-import jeseogy from "../assets/img/jeseogy.JPG";
 import throwball from "../assets/video/throw.MOV";
 import miniplay from "../assets/video/miniplay.MOV";
 import { LazyLoadImage } from "react-lazy-load-image-component";
@@ -38,7 +37,7 @@ class Collection2 extends React.Component {
       initialSlide: 2,
       className: "center",
       centerMode: true,
-      centerPadding: "16px",
+      centerPadding: "20px",
       appendDots: (dots) => (
         <div
           style={{
@@ -104,9 +103,6 @@ class Collection2 extends React.Component {
           return <div style={{}}></div>;
         }
         if (i === 7) {
-          return <div style={{}}></div>;
-        }
-        if (i === 8) {
           return <div style={{}}></div>;
         }
       },
@@ -312,44 +308,6 @@ class Collection2 extends React.Component {
                             </span>
                           </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="w-screen overflow-x-hidden font-sans">
-                <div class="flex justify-center items-center p-6">
-                  <div class="bg-white border-2 border-gray-300 p-6 rounded-md tracking-wide shadow-lg">
-                    <h4
-                      id="name"
-                      class="text-lg font-semibold text-center mb-4 font-sans"
-                    >
-                      쓰레기 실명제
-                    </h4>
-                    <div id="header" class="flex items-center mb-4">
-                      <img
-                        alt="avatar"
-                        class="w-20 border-2 border-gray-300"
-                        src={jeseogy}
-                      />
-                      <div id="header-text" class="leading-5 ml-6 sm">
-                        <h4 id="name" class="text-lg font-semibold">
-                          유제석
-                        </h4>
-                        <h5 id="job" class="font-semibold text-sm">
-                          평범한 시민
-                        </h5>
-                      </div>
-                    </div>
-                    <div class="font-semibold text-sm text-gray-900">
-                      <div>성별 : 남성</div>
-                      <div>나이 : 27</div>
-                      <div>전화번호 : +82 10-4737-4115</div>
-                      <div>쓰레기 좌표 : 33.468866, 126.312406</div>
-                      <div>
-                        쓰레기를 발견할 시, 위에 번호로 연락 주시기 바랍니다.
-                        감사합니다.
                       </div>
                     </div>
                   </div>

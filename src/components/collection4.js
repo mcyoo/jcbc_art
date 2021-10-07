@@ -34,11 +34,12 @@ class Collection4 extends React.Component {
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-      swipeToSlide: true,
+      swipeToSlide: false,
       initialSlide: 4,
       className: "center",
-      centerMode: true,
+      centerMode: false,
       centerPadding: "16px",
+      swipe: false,
       appendDots: (dots) => (
         <div
           style={{
