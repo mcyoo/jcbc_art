@@ -207,9 +207,9 @@ class Home extends React.Component {
 
                           <div className="mx-4 mb-4">
                             <span className="text-sm">
-                              어선에서 쓸 법한 흰색 트레이가 버려져 있다. 뭐가
-                              담겼을지 모를, 쓰임을 다한 트레이에 흙을 채우고,
-                              식물을 심었다.
+                              해안가에 버려진 쓰레기 중 어선에서 쓸 법한 흰색
+                              트레이가 버려져 있다. 뭐가 담겼을지 모를, 쓰임을
+                              다한 트레이에 흙을 채우고, 식물을 심었다.
                             </span>
                           </div>
                         </div>
@@ -256,7 +256,8 @@ class Home extends React.Component {
                           <div className="mx-4 mb-4">
                             <span className="text-sm">
                               제주도는 화산섬 이다. 돌 틈으로 용암이 흘러
-                              내린다. 자세히는 보지 말자. 멀리서 봐야 아름답다.
+                              내린다. 자세히는 보지 말자. 다 해양쓰레기로 버려진
+                              라이터들 이다. 이 작품은 멀리서 봐야 아름답다.
                             </span>
                           </div>
                         </div>
@@ -302,9 +303,9 @@ class Home extends React.Component {
                           </div>
                           <div className="mx-4 mb-4">
                             <span className="text-sm">
-                              다양한 색깔의 부표들이 버려져 있다. 색깔 별로
-                              모아서 크리스마스 트리 처럼 형형색색의 부표를
-                              걸어두었다.
+                              해안가에는 다양한 색깔의 부표들이 버려져 있다.
+                              색깔 별로 모아서 크리스마스 트리 처럼 형형색색의
+                              부표를 걸어두었다.
                             </span>
                           </div>
                         </div>
@@ -362,9 +363,7 @@ class Home extends React.Component {
                             </div>
                           </div>
                           <div className="mx-4 mb-4">
-                            <span className="text-sm">
-                              부표를 최대한 멀리 던집니다..!
-                            </span>
+                            <span className="text-sm">버려진 부표 던지기</span>
                           </div>
                         </div>
                       </div>
@@ -421,7 +420,9 @@ class Home extends React.Component {
                             </div>
                           </div>
                           <div className="mx-4 mb-4">
-                            <span className="text-sm">드럼도 치고요.</span>
+                            <span className="text-sm">
+                              버려진 쓰레기로 드럼치기
+                            </span>
                           </div>
                         </div>
                       </div>
@@ -475,7 +476,7 @@ class Home extends React.Component {
                           </div>
                           <div className="mx-4 mb-4">
                             <span className="text-sm">
-                              하늘에 굿을 지냅니다. 깨끗한 제주바당을 위해서요!
+                              하늘에 굿을 지냅니다. 깨끗한 제주바당을 위해!
                             </span>
                           </div>
                         </div>

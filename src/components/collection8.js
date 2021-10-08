@@ -1,8 +1,8 @@
 import React from "react";
 import "../assets/App.css";
-import jeseogy from "../assets/img/jeseogy.JPG";
+import ego_letgo_ from "../assets/img/ego.letgo_.PNG";
 
-class Collection4 extends React.Component {
+class Collection8 extends React.Component {
   render() {
     return (
       <div className="">
@@ -20,22 +20,22 @@ class Collection4 extends React.Component {
                   <img
                     alt="avatar"
                     class="w-20 border-2 border-gray-300"
-                    src={jeseogy}
+                    src={ego_letgo_}
                   />
                   <div id="header-text" class="leading-5 ml-6 sm">
                     <h4 id="name" class="text-lg font-semibold">
-                      유제석
+                      고나경
                     </h4>
                     <h5 id="job" class="font-semibold text-sm">
-                      평범한 시민
+                      나메크성인
                     </h5>
                   </div>
                 </div>
                 <div class="font-semibold text-sm text-gray-900">
-                  <div>성별 : 남성</div>
-                  <div>나이 : 27</div>
-                  <div>전화번호 : +82 10-4737-411x</div>
-                  <div>쓰레기 좌표 : 33.468866, 126.312406</div>
+                  <div>성별 : 여성</div>
+                  <div>나이 : 30</div>
+                  <div>전화번호 : +82 10-7245-418x</div>
+                  <div>쓰레기 좌표 : 33.473549, 126.352153</div>
                   <div>
                     쓰레기를 발견할 시, 위에 번호로 연락 주시기 바랍니다.
                     감사합니다.
@@ -55,4 +55,4 @@ class Collection4 extends React.Component {
     );
   }
 }
-export default Collection4;
+export default Collection8;
