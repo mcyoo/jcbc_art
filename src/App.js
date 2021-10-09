@@ -24,8 +24,8 @@ function App() {
             <Route path="/collection4" component={Collection4} />
             <Route path="/collection5" component={Collection5} />
             <Route path="/collection6" component={Collection6} />
-            <Route path="/collection7" component={Collection7} />
-            <Route path="/collection8" component={Collection8} />
+            <Route path="/collection7" component={Collection8} />
+            <Route path="/collection8" component={Collection7} />
           </Switch>
         </div>
       </Router>
