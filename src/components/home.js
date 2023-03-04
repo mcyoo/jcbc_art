@@ -5,10 +5,9 @@ import jcbc_logo from "../assets/img/logo.jpg";
 import collection1 from "../assets/img/collection1.jpeg";
 import collection2 from "../assets/img/collection2.jpeg";
 import collection3 from "../assets/img/collection3.jpg";
-import good from "../assets/img/good.jpg";
+import good from "../assets/img/good.JPG";
 import poster from "../assets/img/poster.png";
 import throwball from "../assets/video/throw.MOV";
-import miniplay from "../assets/video/miniplay.MOV";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 class Home extends React.Component {
@@ -37,7 +36,7 @@ class Home extends React.Component {
       initialSlide: 0,
       className: "center",
       centerMode: true,
-      centerPadding: "20px",
+      centerPadding: "10%",
       appendDots: (dots) => (
         <div
           style={{
@@ -152,6 +151,7 @@ class Home extends React.Component {
                               alt="poster"
                               src={poster}
                               visibleByDefault={true}
+                              width="100%"
                             />
                           </div>
                           <div className="mx-4 mb-4 mt-6">
@@ -364,65 +364,6 @@ class Home extends React.Component {
                           </div>
                           <div className="mx-4 mb-4">
                             <span className="text-sm">버려진 부표 던지기</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="w-screen overflow-x-hidden">
-                <div className="pt-0">
-                  <div className="px-2">
-                    <div className="max-w-md mx-auto bg-white shadow-lg rounded-md overflow-hidden md:max-w-2xl">
-                      <div className="flex">
-                        <div className="w-full">
-                          <div className="flex justify-between items-center p-3">
-                            <div className="flex flex-row items-center">
-                              <img
-                                src={jcbc_logo}
-                                className="rounded-full"
-                                width="40"
-                                alt="jcbc_logo"
-                              />
-                              <div className="flex flex-row items-center ml-2">
-                                {" "}
-                                <span className="font-bold mr-1 text-sm md:text-lg">
-                                  쿵짝짝 쿵짝
-                                </span>
-                              </div>
-                            </div>
-                            <div className="pr-2">
-                              {" "}
-                              <i className="fa fa-ellipsis-h text-gray-400 hover:cursor-pointer hover:text-gray-600"></i>
-                            </div>
-                          </div>
-                          <div>
-                            <video
-                              autoplay="autoplay"
-                              muted="muted"
-                              controls
-                              loop
-                              preload="auto"
-                            >
-                              <source src={miniplay}></source>
-                            </video>
-                          </div>
-                          <div className="p-4 flex justify-between items-center">
-                            <div className="flex flex-row items-center">
-                              <i className="fa fa-heart-o mr-2 fa-1x hover:text-gray-600"></i>
-                              <i className="fa fa-comment-o mr-2 fa-1x hover:text-gray-600"></i>
-                              <i className="fa fa-send-o mr-2 fa-1x hover:text-gray-600"></i>
-                            </div>
-                            <div>
-                              <i className="fa fa-bookmark-o fa-1x hover:text-gray-600"></i>
-                            </div>
-                          </div>
-                          <div className="mx-4 mb-4">
-                            <span className="text-sm">
-                              버려진 쓰레기로 드럼치기
-                            </span>
                           </div>
                         </div>
                       </div>

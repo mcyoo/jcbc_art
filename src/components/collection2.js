@@ -5,7 +5,7 @@ import jcbc_logo from "../assets/img/logo.jpg";
 import collection1 from "../assets/img/collection1.jpeg";
 import collection2 from "../assets/img/collection2.jpeg";
 import collection3 from "../assets/img/collection3.jpg";
-import good from "../assets/img/good.jpg";
+import good from "../assets/img/good.JPG";
 import poster from "../assets/img/poster.png";
 import throwball from "../assets/video/throw.MOV";
 import miniplay from "../assets/video/miniplay.MOV";
