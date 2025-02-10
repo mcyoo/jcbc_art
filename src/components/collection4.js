@@ -5,7 +5,7 @@ import jeseogy from "../assets/img/jeseogy.JPG";
 class Collection4 extends React.Component {
   render() {
     return (
-      <div className="">
+      <div className="-mt-24">
         <div className="">
           <div className="w-screen overflow-x-hidden font-sans">
             <div class="flex justify-center items-center p-6">

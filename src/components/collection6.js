@@ -5,7 +5,7 @@ import ziiiiy_99 from "../assets/img/ziiiiy_99.JPG";
 class Collection6 extends React.Component {
   render() {
     return (
-      <div className="">
+      <div className="-mt-24">
         <div className="">
           <div className="w-screen overflow-x-hidden font-sans">
             <div class="flex justify-center items-center p-6">
@@ -42,12 +42,6 @@ class Collection6 extends React.Component {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="flex-col md:text-lg text-sm text-right mr-5 mb-36 border-t border-gray-400 md:mx-48 mx-4 mt-8">
-            <div className="mt-4">제주클린보이즈클럽 작품 전시회</div>
-            <div>2021.10</div>
-            <div>애월읍 신엄리 2841-14 올레16코스</div>
-            <div>📧 mcyoo247@gmail.com</div>
           </div>
         </div>
       </div>
