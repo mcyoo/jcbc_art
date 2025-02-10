@@ -7,3 +7,4 @@ services:
       - "8080:3000"
     volumes:
       - ./src:/app/src
+      - ./public:/app/public

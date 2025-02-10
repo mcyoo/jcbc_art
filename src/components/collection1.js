@@ -60,6 +60,27 @@ class Home extends React.Component {
 
     return (
       <div className="">
+        <div
+          class="container inset-0 max-w-full flex items-center justify-around h-16 lg:h-24 bg-white border-b border-gray-400 fixed z-10"
+        >
+          <div class="flex w-36 lg:w-56 items-center justify-between">
+            <img
+              class="w-20 h-8 md:w-32 md:h-12"
+              src="/instagram_exhibition.png"
+            />
+            <a
+              href="https://www.instagram.com/jejucleanboysclub/?hl=ko"
+              target="_blank"
+              class="bg-gradient-to-r from-yellow-400 via-pink-400 to-red-600 p-0.5 rounded-full"
+            >
+              <img
+                class="w-10 lg:w-16 rounded-full border-white border-2"
+                src="/logo.jpg"
+              />
+            </a>
+          </div>
+          <a class="text-sm lg:text-xl">@jejucleanboysclub</a>
+        </div>
         {isLoading ? (
           <div className="">
             <div className="w-full flex justify-center items-center">

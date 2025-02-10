@@ -33,7 +33,6 @@ class Collection8 extends React.Component {
                 </div>
                 <div class="font-semibold text-sm text-gray-900">
                   <div>성별 : 여성</div>
-                  <div>나이 : 30</div>
                   <div>전화번호 : +82 10-7245-418x</div>
                   <div>쓰레기 좌표 : 33.473549, 126.352153</div>
                   <div>
