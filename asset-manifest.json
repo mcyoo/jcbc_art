@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/jcbc_art/static/css/main.98ded060.chunk.css",
+    "main.js": "/jcbc_art/static/js/main.3bceb271.chunk.js",
+    "main.js.map": "/jcbc_art/static/js/main.3bceb271.chunk.js.map",
+    "runtime-main.js": "/jcbc_art/static/js/runtime-main.5493de4c.js",
+    "runtime-main.js.map": "/jcbc_art/static/js/runtime-main.5493de4c.js.map",
+    "static/css/2.d9d122dc.chunk.css": "/jcbc_art/static/css/2.d9d122dc.chunk.css",
+    "static/js/2.28cc8add.chunk.js": "/jcbc_art/static/js/2.28cc8add.chunk.js",
+    "static/js/2.28cc8add.chunk.js.map": "/jcbc_art/static/js/2.28cc8add.chunk.js.map",
+    "static/js/3.215f9ac5.chunk.js": "/jcbc_art/static/js/3.215f9ac5.chunk.js",
+    "static/js/3.215f9ac5.chunk.js.map": "/jcbc_art/static/js/3.215f9ac5.chunk.js.map",
+    "index.html": "/jcbc_art/index.html",
+    "static/css/2.d9d122dc.chunk.css.map": "/jcbc_art/static/css/2.d9d122dc.chunk.css.map",
+    "static/css/main.98ded060.chunk.css.map": "/jcbc_art/static/css/main.98ded060.chunk.css.map",
+    "static/js/2.28cc8add.chunk.js.LICENSE.txt": "/jcbc_art/static/js/2.28cc8add.chunk.js.LICENSE.txt",
+    "static/media/chulma___.5d0f5bee.PNG": "/jcbc_art/static/media/chulma___.5d0f5bee.PNG",
+    "static/media/collection1.03bb3c2a.jpeg": "/jcbc_art/static/media/collection1.03bb3c2a.jpeg",
+    "static/media/collection2.f8fac6ca.jpeg": "/jcbc_art/static/media/collection2.f8fac6ca.jpeg",
+    "static/media/collection3.ec150b38.jpg": "/jcbc_art/static/media/collection3.ec150b38.jpg",
+    "static/media/ego.letgo_.1e956df0.PNG": "/jcbc_art/static/media/ego.letgo_.1e956df0.PNG",
+    "static/media/jeseogy.35efa4ac.JPG": "/jcbc_art/static/media/jeseogy.35efa4ac.JPG",
+    "static/media/poster.9a2e6ca5.png": "/jcbc_art/static/media/poster.9a2e6ca5.png",
+    "static/media/slick-theme.css": "/jcbc_art/static/media/slick.c94f7671.ttf",
+    "static/media/wwwwwwere.bedddc1b.JPG": "/jcbc_art/static/media/wwwwwwere.bedddc1b.JPG",
+    "static/media/ziiiiy_99.5ba21cd6.JPG": "/jcbc_art/static/media/ziiiiy_99.5ba21cd6.JPG"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5493de4c.js",
+    "static/css/2.d9d122dc.chunk.css",
+    "static/js/2.28cc8add.chunk.js",
+    "static/css/main.98ded060.chunk.css",
+    "static/js/main.3bceb271.chunk.js"
+  ]
+}
