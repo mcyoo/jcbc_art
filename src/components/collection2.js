@@ -66,7 +66,7 @@ class Home extends React.Component {
           <div class="flex w-36 lg:w-56 items-center justify-between">
             <img
               class="w-20 h-8 md:w-32 md:h-12"
-              src="/instagram_exhibition.png"
+              src={`${process.env.PUBLIC_URL}/instagram_exhibition.png`}
             />
             <a
               href="https://www.instagram.com/jejucleanboysclub/?hl=ko"
@@ -75,7 +75,7 @@ class Home extends React.Component {
             >
               <img
                 class="w-10 lg:w-16 rounded-full border-white border-2"
-                src="/logo.jpg"
+                src={`${process.env.PUBLIC_URL}/logo.jpg`}
               />
             </a>
           </div>
